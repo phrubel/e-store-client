@@ -1,0 +1,115 @@
+[debug] [2021-04-02T15:12:28.034Z] ----------------------------------------------------------------------
+[debug] [2021-04-02T15:12:28.038Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-04-02T15:12:28.039Z] CLI Version:   9.8.0
+[debug] [2021-04-02T15:12:28.039Z] Platform:      win32
+[debug] [2021-04-02T15:12:28.039Z] Node Version:  v14.15.3
+[debug] [2021-04-02T15:12:28.041Z] Time:          Fri Apr 02 2021 21:12:28 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-04-02T15:12:28.041Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-02T15:12:28.053Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-02T15:12:28.054Z] > authorizing via signed-in user
+[debug] [2021-04-02T15:12:28.054Z] [iam] checking project e-store-196ba for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-04-02T15:12:28.058Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-02T15:12:28.058Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-02T15:12:32.906Z] <<< HTTP RESPONSE 200 {"date":"Fri, 02 Apr 2021 15:12:30 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-02T15:12:32.966Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/e-store-196ba:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-04-02T15:12:35.913Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 02 Apr 2021 15:12:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1197","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-02T15:12:35.918Z] > refreshing access token with scopes: []
+[debug] [2021-04-02T15:12:35.919Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-02T15:12:37.736Z] <<< HTTP RESPONSE 200 {"date":"Fri, 02 Apr 2021 15:12:36 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-02T15:12:37.827Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/e-store-196ba [none]
+[debug] [2021-04-02T15:12:56.773Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/e-store-196ba
+[debug] [2021-04-02T15:12:57.374Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/e-store-196ba
+    at Client.doRequest (C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:211:19)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.request (C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:289:21)
+    at async Object.getDefaultHostingSite (C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:66:9)
+    at async C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:161:17
+[error] 
+[error] Error: Failed to get Firebase project e-store-196ba. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-04-02T15:13:55.480Z] ----------------------------------------------------------------------
+[debug] [2021-04-02T15:13:55.484Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-04-02T15:13:55.485Z] CLI Version:   9.8.0
+[debug] [2021-04-02T15:13:55.485Z] Platform:      win32
+[debug] [2021-04-02T15:13:55.485Z] Node Version:  v14.15.3
+[debug] [2021-04-02T15:13:55.487Z] Time:          Fri Apr 02 2021 21:13:55 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-04-02T15:13:55.487Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-02T15:13:55.501Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-02T15:13:55.502Z] > authorizing via signed-in user
+[debug] [2021-04-02T15:13:55.503Z] [iam] checking project e-store-196ba for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-04-02T15:13:55.507Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-02T15:13:55.507Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-02T15:13:55.588Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2021-04-02T15:13:55.592Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/e-store-196ba [none]
+[debug] [2021-04-02T15:13:55.601Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/e-store-196ba
+[debug] [2021-04-02T15:13:55.612Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/e-store-196ba
+    at Client.doRequest (C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:211:19)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.request (C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:289:21)
+    at async Object.getDefaultHostingSite (C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:66:9)
+    at async C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:161:17
+[error] 
+[error] Error: Failed to get Firebase project e-store-196ba. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-04-02T15:14:14.973Z] ----------------------------------------------------------------------
+[debug] [2021-04-02T15:14:14.983Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-04-02T15:14:14.985Z] CLI Version:   9.8.0
+[debug] [2021-04-02T15:14:14.985Z] Platform:      win32
+[debug] [2021-04-02T15:14:14.986Z] Node Version:  v14.15.3
+[debug] [2021-04-02T15:14:14.988Z] Time:          Fri Apr 02 2021 21:14:14 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-04-02T15:14:14.989Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-02T15:14:15.022Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-02T15:14:15.038Z] > authorizing via signed-in user
+[debug] [2021-04-02T15:14:15.046Z] [iam] checking project e-store-196ba for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-04-02T15:14:15.053Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-02T15:14:15.054Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-02T15:14:32.326Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Fri, 02 Apr 2021 15:14:31 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-02T15:14:32.423Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/e-store-196ba:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-04-02T15:14:53.652Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. connect ETIMEDOUT 172.217.163.106:443
+[debug] [2021-04-02T15:14:53.656Z] > refreshing access token with scopes: []
+[debug] [2021-04-02T15:14:53.657Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-02T15:15:14.709Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2021-04-02T15:15:52.218Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:26:12)
+    at refreshTokens (C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:297:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.getAccessToken (C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:144:23)
+    at async Client.addAuthHeader (C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:135:21)
+    at async Client.request (C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:93:34)
+    at async Object.getFirebaseProject (C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:289:21)
+    at async Object.getDefaultHostingSite (C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:66:9)
+    at async C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:161:17
+[error] 
+[error] Error: Failed to get Firebase project e-store-196ba. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-04-02T15:20:00.157Z] ----------------------------------------------------------------------
+[debug] [2021-04-02T15:20:00.164Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\P H Rubel\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js logout
+[debug] [2021-04-02T15:20:00.165Z] CLI Version:   9.8.0
+[debug] [2021-04-02T15:20:00.166Z] Platform:      win32
+[debug] [2021-04-02T15:20:00.166Z] Node Version:  v14.15.3
+[debug] [2021-04-02T15:20:00.168Z] Time:          Fri Apr 02 2021 21:20:00 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-04-02T15:20:00.169Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-02T15:20:00.376Z] >>> HTTP REQUEST GET https://accounts.google.com/o/oauth2/revoke?token=1%2F%2F0gaq5tssN3luKCgYIARAAGBASNwF-L9Iro2iGtpcW1fchYhP7rR38_WzocnBfIA6-Uo_czoFKxAuNUYWquuOvfX3G5NxQuHLPH5A  
+ 

@@ -1,0 +1,13 @@
+thead{
+    background-color: white;
+}
+.check-out-section{
+    min-height: 80vh;
+}
+.check-out-section table tr td{
+    font-weight: 700;
+    border: none;
+}
+.check-out-section table tr th{
+    color: rgba(128, 128, 128, 0.5);
+}
