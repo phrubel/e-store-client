@@ -1,5 +1,15 @@
 # E-Store full-stack-Project
-E-Store is a full stack Project.This Application is a simple multiple page web application.It has a simple admin panel for manage product and delete system with database.
+
+# Live-site:
+https://e-store-196ba.web.app/
+
+# Features:
+•	It is Mern Stack Project.
+•	It is fully Responsive website.
+•	It is fully authenticated by Google authentication.
+•	 Admin can add service and see the all Order List.
+•	There has a dashboard which give access to different route between admin and user.
+
 
 ## E-Store Based On Script
 1. React Router
@@ -13,6 +23,4 @@ E-Store is a full stack Project.This Application is a simple multiple page web a
 10. React Hook form
 
 
-# Live-site:
-https://e-store-196ba.web.app/
-# e-store-client
+
